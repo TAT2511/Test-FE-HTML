@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="desktop-container">
+        <div class="desktop-desktop">
+          <div class="desktop-footer">
+            <div class="desktop-group96">
+              <img
+                alt="Line71190"
+                src="public/external/line71190-7zr.svg"
+                class="desktop-line7"
+              />
+              <span class="desktop-text100">
+                © Inter IKEA Systems B.V. 1999 - 2023
+              </span>
+              <div class="desktop-frame6">
+                <div class="desktop-help">
+                  <span class="desktop-text101">Help</span>
+                  <span class="desktop-text102">
+                    <span class="desktop-text103">Home</span>
+                    <br />
+                    <span>Product</span>
+                    <br />
+                    <span>Sale</span>
+                    <br />
+                    <span>Blog</span>
+                    <br />
+                  </span>
+                  <img
+                    alt="Rectangle481196"
+                    src="public/external/rectangle481196-xmf-200h.png"
+                    class="desktop-rectangle48"
+                  />
+                  <img
+                    alt="Rectangle491197"
+                    src="public/external/rectangle491197-juxc-200h.png"
+                    class="desktop-rectangle49"
+                  />
+                </div>
+                <div class="desktop-ourcompany">
+                  <div class="desktop-group49">
+                    <span class="desktop-text111">Company</span>
+                    <span class="desktop-text112">
+                      <span>About us</span>
+                      <br />
+                      <span>Latest News</span>
+                      <br />
+                      <span>Contact us</span>
+                      <br />
+                      <span>Get a free Quot</span>
+                    </span>
+                  </div>
+                  <img
+                    alt="Rectangle501202"
+                    src="public/external/rectangle501202-9hb-200h.png"
+                    class="desktop-rectangle50"
+                  />
+                  <img
+                    alt="Rectangle511203"
+                    src="public/external/rectangle511203-560b-200h.png"
+                    class="desktop-rectangle51"
+                  />
+                </div>
+                <div class="desktop-socialmedia">
+                  <div class="desktop-social-media">
+                    <span class="desktop-text120">Social Media</span>
+                    <span class="desktop-text121">
+                      <span>LinkedIn</span>
+                      <br />
+                      <span>Facebook</span>
+                      <br />
+                      <span>Instagram</span>
+                      <br />
+                      <span>Twitter</span>
+                    </span>
+                  </div>
+                  <img
+                    alt="Rectangle521208"
+                    src="public/external/rectangle521208-3dz-200h.png"
+                    class="desktop-rectangle52"
+                  />
+                  <img
+                    alt="Rectangle531209"
+                    src="public/external/rectangle531209-z5o9-200h.png"
+                    class="desktop-rectangle53"
+                  />
+                </div>
+              </div>
+              <div class="desktop-frame7">
+                <img
+                  alt="logo11211"
+                  src="public/external/logo11211-odh8-200h.png"
+                  class="desktop-logo11"
+                />
+                <span class="desktop-text129">
+                  Transforming Homes, Empowering Lives. Discover IKEA - Where
+                  Style Meets Functionality.
+                </span>
+                <div class="desktop-icon1">
+                  <div class="desktop-group47">
+                    <img
+                      alt="Ellipse44I121"
+                      src="public/external/ellipse44i121-cd0s-200w.png"
+                      class="desktop-ellipse441"
+                    />
+                    <img
+                      alt="bxbxlfacebookI121"
+                      src="public/external/bxbxlfacebooki121-6zk.svg"
+                      class="desktop-bxbxlfacebook"
+                    />
+                  </div>
+                  <div class="desktop-group46">
+                    <img
+                      alt="Ellipse45I121"
+                      src="public/external/ellipse45i121-0qsb-200h.png"
+                      class="desktop-ellipse451"
+                    />
+                    <div class="desktop-akariconsinstagramfill">
+                      <div class="desktop-group1">
+                        <img
+                          alt="VectorI121"
+                          src="public/external/vectori121-uf4p.svg"
+                          class="desktop-vector1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="desktop-group45">
+                    <img
+                      alt="Ellipse46I121"
+                      src="public/external/ellipse46i121-del-200h.png"
+                      class="desktop-ellipse461"
+                    />
+                    <div class="desktop-social-icons-isolated">
+                      <img
+                        alt="LinkedinI121"
+                        src="public/external/linkedini121-6ejn.svg"
+                        class="desktop-linkedin"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-star1">
+              <img
+                alt="Ellipse431215"
+                src="public/external/ellipse431215-t1xr-200h.png"
+                class="desktop-ellipse43"
+              />
+              <img
+                alt="Ellipse501216"
+                src="public/external/ellipse501216-oqx1o-200h.png"
+                class="desktop-ellipse50"
+              />
+              <img
+                alt="Ellipse571217"
+                src="public/external/ellipse571217-ypr4-200h.png"
+                class="desktop-ellipse57"
+              />
+              <img
+                alt="Ellipse441218"
+                src="public/external/ellipse441218-06ko-200h.png"
+                class="desktop-ellipse442"
+              />
+              <img
+                alt="Ellipse511219"
+                src="public/external/ellipse511219-ljpr-200h.png"
+                class="desktop-ellipse51"
+              />
+              <img
+                alt="Ellipse581220"
+                src="public/external/ellipse581220-twz-200h.png"
+                class="desktop-ellipse58"
+              />
+              <img
+                alt="Ellipse451221"
+                src="public/external/ellipse451221-hain-200h.png"
+                class="desktop-ellipse452"
+              />
+              <img
+                alt="Ellipse521222"
+                src="public/external/ellipse521222-wrvs-200h.png"
+                class="desktop-ellipse52"
+              />
+              <img
+                alt="Ellipse591223"
+                src="public/external/ellipse591223-vxmc-200h.png"
+                class="desktop-ellipse59"
+              />
+              <img
+                alt="Ellipse461224"
+                src="public/external/ellipse461224-fahn-200h.png"
+                class="desktop-ellipse462"
+              />
+              <img
+                alt="Ellipse531225"
+                src="public/external/ellipse531225-mpd-200h.png"
+                class="desktop-ellipse53"
+              />
+              <img
+                alt="Ellipse601226"
+                src="public/external/ellipse601226-o0po-200h.png"
+                class="desktop-ellipse60"
+              />
+              <img
+                alt="Ellipse471227"
+                src="public/external/ellipse471227-stgy-200h.png"
+                class="desktop-ellipse47"
+              />
+              <img
+                alt="Ellipse541228"
+                src="public/external/ellipse541228-8exq-200h.png"
+                class="desktop-ellipse54"
+              />
+              <img
+                alt="Ellipse611229"
+                src="public/external/ellipse611229-axx8-200h.png"
+                class="desktop-ellipse61"
+              />
+              <img
+                alt="Ellipse481230"
+                src="public/external/ellipse481230-vr7b-200h.png"
+                class="desktop-ellipse48"
+              />
+              <img
+                alt="Ellipse551231"
+                src="public/external/ellipse551231-7c3-200h.png"
+                class="desktop-ellipse55"
+              />
+              <img
+                alt="Ellipse621232"
+                src="public/external/ellipse621232-ob9-200h.png"
+                class="desktop-ellipse62"
+              />
+              <img
+                alt="Ellipse491233"
+                src="public/external/ellipse491233-qryv9-200h.png"
+                class="desktop-ellipse49"
+              />
+              <img
+                alt="Ellipse561234"
+                src="public/external/ellipse561234-nm2-200h.png"
+                class="desktop-ellipse56"
+              />
+              <img
+                alt="Ellipse631235"
+                src="public/external/ellipse631235-8999-200h.png"
+                class="desktop-ellipse63"
+              />
+            </div>
+          </div>
+          <div class="desktop-subscribe-our-newsletter">
+            <img
+              alt="Rectangle20011237"
+              src="public/external/rectangle20011237-w3cc-1500w.png"
+              class="desktop-rectangle2001"
+            />
+            <div class="desktop-frame33">
+              <span class="desktop-text130 DesktopBody2">NEWSLETTER</span>
+              <div class="desktop-frame32">
+                <span class="desktop-text131 DesktopHeadline1">
+                  Subscribe Our Newsletter
+                </span>
+                <span class="desktop-text132">
+                  Subscribe to our newsletter and be the first to know about the
+                  latest trends in home decor, furniture releases, and exclusive
+                  offers.
+                </span>
+              </div>
+              <div class="desktop-sub">
+                <img
+                  alt="Rectangle2017I124"
+                  src="public/external/rectangle2017i124-y3q4-200h.png"
+                  class="desktop-rectangle2017"
+                />
+                <img
+                  alt="Rectangle2018I124"
+                  src="public/external/rectangle2018i124-pg8j.svg"
+                  class="desktop-rectangle2018"
+                />
+                <span class="desktop-text133 DesktopLabel">Enter email...</span>
+                <span class="desktop-text134 DesktopLabel">Subscribe</span>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-faq">
+            <span class="desktop-text135 DesktopBody2">POPURLAR QUESTIONS</span>
+            <div class="desktop-frame34">
+              <span class="desktop-text136 DesktopHeadline1">
+                Frequently Asked Questions
+              </span>
+              <span class="desktop-text137 DesktopBody3">
+                Get expert advice and solutions to your IKEA-related questions
+                in our comprehensive Q&amp;A section, covering everything from
+                furniture selection to storage solutions and home styling tips.
+              </span>
+            </div>
+            <div class="desktop-qa">
+              <div class="desktop-frame121">
+                <div class="desktop-frame211">
+                  <span class="desktop-text138 H5">
+                    Q: What is the delivery time for IKEA products purchased
+                    online?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-lukp.svg"
+                  class="desktop-line81"
+                />
+              </div>
+              <div class="desktop-frame131">
+                <div class="desktop-frame212">
+                  <span class="desktop-text139 H5">
+                    Q: How can I track my online order?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-t3tt.svg"
+                  class="desktop-line82"
+                />
+              </div>
+              <div class="desktop-frame14">
+                <div class="desktop-frame213">
+                  <span class="desktop-text140 H5">
+                    Q: What is the IKEA Return Policy?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-twk.svg"
+                  class="desktop-line83"
+                />
+              </div>
+              <div class="desktop-frame15">
+                <div class="desktop-frame214">
+                  <span class="desktop-text141">
+                    Q: Do you offer assembly services for IKEA furniture?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-pn5.svg"
+                  class="desktop-line84"
+                />
+              </div>
+              <div class="desktop-frame16">
+                <div class="desktop-frame215">
+                  <span class="desktop-text142 H5">
+                    Q: Can I customize IKEA furniture to fit my specific
+                    requirements?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-4jqo.svg"
+                  class="desktop-line85"
+                />
+              </div>
+              <div class="desktop-frame122">
+                <div class="desktop-frame216">
+                  <span class="desktop-text143 H5">
+                    Q: Does IKEA offer interior design services?
+                  </span>
+                </div>
+                <img
+                  alt="Line8I125"
+                  src="public/external/line8i125-3il.svg"
+                  class="desktop-line86"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="desktop-ourtestimonials">
+            <div class="desktop-frame37">
+              <div class="desktop-frame36">
+                <span class="desktop-text144 DesktopBody2">
+                  OUR TESTIMONIALS
+                </span>
+                <div class="desktop-frame35">
+                  <span class="desktop-text145 DesktopHeadline1">
+                    What Our Clients Are Saying
+                  </span>
+                  <span class="desktop-text146 DesktopBody3">
+                    Don't just take our word for it - read what our satisfied
+                    customers have to say about their IKEA experience.
+                  </span>
+                </div>
+              </div>
+              <div class="desktop-customerrv">
+                <div class="desktop-frame28">
+                  <img
+                    alt="Rectangle37I126"
+                    src="public/external/rectangle37i126-7h4-400h.png"
+                    class="desktop-rectangle371"
+                  />
+                  <img
+                    alt="Rectangle37I126"
+                    src="public/external/rectangle37i126-6j7l-400h.png"
+                    class="desktop-rectangle372"
+                  />
+                  <div class="desktop-frame261">
+                    <div class="desktop-frame1939952224157978046311">
+                      <div class="desktop-group2">
+                        <img
+                          alt="VectorI126"
+                          src="public/external/vectori126-7rnm.svg"
+                          class="desktop-vector2"
+                        />
+                        <img
+                          alt="VectorI126"
+                          src="public/external/vectori126-9fah.svg"
+                          class="desktop-vector3"
+                        />
+                      </div>
+                    </div>
+                    <span class="desktop-text147 DesktopBody3">
+                      I recently purchased a new sofa from IKEA, and I couldn't
+                      be happier! The quality is exceptional, and the design
+                      perfectly complements my living room. The customer service
+                      was fantastic, and the delivery was prompt. IKEA has
+                      become my go-to for stylish and affordable furniture.
+                    </span>
+                    <div class="desktop-frame251">
+                      <img
+                        alt="Vector13I126"
+                        src="public/external/vector13i126-fx4r.svg"
+                        class="desktop-vector131"
+                      />
+                      <img
+                        alt="Vector13I126"
+                        src="public/external/vector13i126-mj1i.svg"
+                        class="desktop-vector132"
+                      />
+                      <span class="desktop-text148">Sarah J.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desktop-frame29">
+                  <img
+                    alt="Rectangle37I126"
+                    src="public/external/rectangle37i126-irt-400h.png"
+                    class="desktop-rectangle373"
+                  />
+                  <img
+                    alt="Rectangle37I126"
+                    src="public/external/rectangle37i126-rttt-400h.png"
+                    class="desktop-rectangle374"
+                  />
+                  <div class="desktop-frame262">
+                    <div class="desktop-frame1939952224157978046312">
+                      <div class="desktop-group3">
+                        <img
+                          alt="VectorI126"
+                          src="public/external/vectori126-4nv.svg"
+                          class="desktop-vector5"
+                        />
+                        <img
+                          alt="VectorI126"
+                          src="public/external/vectori126-aclk.svg"
+                          class="desktop-vector6"
+                        />
+                      </div>
+                    </div>
+                    <span class="desktop-text149 DesktopBody3">
+                      I love shopping at IKEA for their innovative storage
+                      solutions. The products are well-designed and help me
+                      maximize space in my small apartment. My only suggestion
+                      would be to have more options for customization. Overall,
+                      I'm impressed with the quality and value IKEA offers.
+                    </span>
+                    <div class="desktop-frame252">
+                      <img
+                        alt="Vector13I126"
+                        src="public/external/vector13i126-zqj5.svg"
+                        class="desktop-vector133"
+                      />
+                      <img
+                        alt="Vector13I126"
+                        src="public/external/vector13i126-b32j.svg"
+                        class="desktop-vector134"
+                      />
+                      <span class="desktop-text150">Mark D.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-ourproducts">
+            <div class="desktop-bg1">
+              <div class="desktop-group1000000685">
+                <img
+                  alt="Vector41269"
+                  src="public/external/vector41269-zssc.svg"
+                  class="desktop-vector41"
+                />
+              </div>
+            </div>
+            <div class="desktop-products">
+              <div class="desktop-frame19">
+                <div class="desktop-maskgroup10">
+                  <img
+                    alt="HeroI127"
+                    src="public/external/heroi127-cubc-500w.png"
+                    class="desktop-hero1"
+                  />
+                </div>
+                <span class="desktop-text151 DesktopHeadline2">
+                  <span>VINDKAST</span>
+                  <br />
+                </span>
+                <span class="desktop-text154 DesktopBody3">
+                  Floor lamp, white
+                </span>
+              </div>
+              <div class="desktop-frame22">
+                <div class="desktop-maskgroup11">
+                  <img
+                    alt="HeroI127"
+                    src="public/external/heroi127-wf2q-500w.png"
+                    class="desktop-hero2"
+                  />
+                </div>
+                <span class="desktop-text155 DesktopHeadline2">
+                  <span>VINDKAST</span>
+                  <br />
+                </span>
+                <span class="desktop-text158 DesktopBody3">
+                  Floor lamp, white
+                </span>
+              </div>
+              <div class="desktop-frame20">
+                <div class="desktop-maskgroup12">
+                  <img
+                    alt="HeroI127"
+                    src="public/external/heroi127-aiv-500w.png"
+                    class="desktop-hero3"
+                  />
+                </div>
+                <span class="desktop-text159 DesktopHeadline2">
+                  <span>VINDKAST</span>
+                  <br />
+                </span>
+                <span class="desktop-text162 DesktopBody3">
+                  Floor lamp, white
+                </span>
+              </div>
+              <div class="desktop-frame217">
+                <div class="desktop-maskgroup13">
+                  <img
+                    alt="HeroI127"
+                    src="public/external/heroi127-itk-500w.png"
+                    class="desktop-hero4"
+                  />
+                </div>
+                <span class="desktop-text163 DesktopHeadline2">
+                  <span>VINDKAST</span>
+                  <br />
+                </span>
+                <span class="desktop-text166 DesktopBody3">
+                  Floor lamp, white
+                </span>
+              </div>
+            </div>
+            <div class="desktop-category">
+              <div class="desktop-newin">
+                <img
+                  alt="Line121277"
+                  src="public/external/line121277-za7d.svg"
+                  class="desktop-line12"
+                />
+                <span class="desktop-text167 DesktopHeadline1">New in</span>
+              </div>
+              <span class="desktop-text168 DesktopHeadline1">Chairs</span>
+              <span class="desktop-text169 DesktopHeadline1">Tables</span>
+              <span class="desktop-text170 DesktopHeadline1">Lighting</span>
+              <span class="desktop-text171 DesktopHeadline1">Bathroom</span>
+              <span class="desktop-text172 DesktopHeadline1">Outdoor</span>
+            </div>
+            <div class="desktop-title">
+              <span class="desktop-text173 DesktopBigTitle2">Our products</span>
+              <span class="desktop-text174 DesktopBody3">
+                Endless Possibilities for Every Room - Explore IKEA's Product
+                Categories
+              </span>
+            </div>
+          </div>
+          <div class="desktop-aboutus">
+            <div class="desktop-about">
+              <div class="desktop-frame111">
+                <div class="desktop-frame132">
+                  <span class="desktop-text175 DesktopBigTitle2">About us</span>
+                </div>
+                <span class="desktop-text176 DesktopBody1">
+                  At IKEA, we believe that a well-designed home should be
+                  accessible to everyone. With our Scandinavian-inspired
+                  furniture and home decor, we aim to transform houses into
+                  functional and inspiring living spaces. Since our founding in
+                  1943, we have been committed to providing innovative solutions
+                  that improve everyday life. Explore our range of affordable
+                  furniture, storage solutions, kitchen essentials, and more.
+                </span>
+              </div>
+              <div class="desktop-maskgroup14">
+                <img
+                  alt="Hero1295"
+                  src="public/external/hero1295-bj5j-700h.png"
+                  class="desktop-hero5"
+                />
+              </div>
+            </div>
+            <div class="desktop-explore">
+              <div class="desktop-maskgroup15">
+                <img
+                  alt="Hero1299"
+                  src="public/external/hero1299-4e0i-900h.png"
+                  class="desktop-hero6"
+                />
+              </div>
+              <div class="desktop-frame112">
+                <span class="desktop-text177 DesktopHeadline2">
+                  Transforming Homes, Empowering Lives - About IKEA
+                </span>
+                <button class="desktop-button1">
+                  <span class="desktop-text178 DesktopButton">
+                    Explore More
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-newcollection">
+            <div class="desktop-bg2">
+              <div class="desktop-bg3">
+                <img
+                  alt="Vector41306"
+                  src="public/external/vector41306-l51.svg"
+                  class="desktop-vector42"
+                />
+              </div>
+            </div>
+            <div class="desktop-content1">
+              <span class="desktop-text179 DesktopBigTitle1">
+                <span class="desktop-text180">We</span>
+                <span class="desktop-text181">provide the best</span>
+                <br />
+                <span class="desktop-text183">Collection interior</span>
+                <br />
+                <span class="desktop-text185">for you</span>
+              </span>
+              <span class="desktop-text186 DesktopHeadline2">
+                We will always offer and provide our best collections for
+                furniture and interior needs at home and anywhere at affordable
+                prices
+              </span>
+              <button class="desktop-button2">
+                <span class="desktop-text187 DesktopBody2">Learn More</span>
+              </button>
+            </div>
+            <div class="desktop-maskgroup16">
+              <img
+                alt="IMAGE31001313"
+                src="public/external/image31001313-zq95g-400w.png"
+                class="desktop-image31001"
+              />
+            </div>
+            <div class="desktop-maskgroup17">
+              <img
+                alt="IMAGE31001316"
+                src="public/external/image31001316-1a85-400w.png"
+                class="desktop-image31002"
+              />
+            </div>
+            <div class="desktop-maskgroup18">
+              <img
+                alt="Rectangle20221318"
+                src="public/external/rectangle20221318-gi2i-500h.png"
+                class="desktop-rectangle20221"
+              />
+              <img
+                alt="IMAGE1111319"
+                src="public/external/image1111319-volh-600h.png"
+                class="desktop-image1111"
+              />
+            </div>
+            <div class="desktop-maskgroup19">
+              <img
+                alt="Rectangle20221321"
+                src="public/external/rectangle20221321-zf4h-500h.png"
+                class="desktop-rectangle20222"
+              />
+              <img
+                alt="IMAGE1111322"
+                src="public/external/image1111322-chu-600h.png"
+                class="desktop-image1112"
+              />
+            </div>
+          </div>
+          <div class="desktop-hero7">
+            <div class="desktop-star2">
+              <img
+                alt="Ellipse11325"
+                src="public/external/ellipse11325-yg0q-200h.png"
+                class="desktop-ellipse110"
+              />
+              <img
+                alt="Ellipse151326"
+                src="public/external/ellipse151326-k30n-200h.png"
+                class="desktop-ellipse151"
+              />
+              <img
+                alt="Ellipse291327"
+                src="public/external/ellipse291327-siw-200h.png"
+                class="desktop-ellipse291"
+              />
+              <img
+                alt="Ellipse21328"
+                src="public/external/ellipse21328-hboo-200h.png"
+                class="desktop-ellipse22"
+              />
+              <img
+                alt="Ellipse161329"
+                src="public/external/ellipse161329-blwd-200h.png"
+                class="desktop-ellipse161"
+              />
+              <img
+                alt="Ellipse301330"
+                src="public/external/ellipse301330-601-200h.png"
+                class="desktop-ellipse301"
+              />
+              <img
+                alt="Ellipse31331"
+                src="public/external/ellipse31331-lj6o-200h.png"
+                class="desktop-ellipse36"
+              />
+              <img
+                alt="Ellipse171332"
+                src="public/external/ellipse171332-3rbg-200h.png"
+                class="desktop-ellipse171"
+              />
+              <img
+                alt="Ellipse311333"
+                src="public/external/ellipse311333-x6i1f-200h.png"
+                class="desktop-ellipse311"
+              />
+              <img
+                alt="Ellipse41334"
+                src="public/external/ellipse41334-ns3o-200h.png"
+                class="desktop-ellipse410"
+              />
+              <img
+                alt="Ellipse181335"
+                src="public/external/ellipse181335-njyp-200h.png"
+                class="desktop-ellipse181"
+              />
+              <img
+                alt="Ellipse321336"
+                src="public/external/ellipse321336-282e-200h.png"
+                class="desktop-ellipse321"
+              />
+              <img
+                alt="Ellipse111337"
+                src="public/external/ellipse111337-g61s-200h.png"
+                class="desktop-ellipse111"
+              />
+              <img
+                alt="Ellipse191338"
+                src="public/external/ellipse191338-74el-200h.png"
+                class="desktop-ellipse191"
+              />
+              <img
+                alt="Ellipse331339"
+                src="public/external/ellipse331339-gy9-200h.png"
+                class="desktop-ellipse331"
+              />
+              <img
+                alt="Ellipse121340"
+                src="public/external/ellipse121340-ohz-200h.png"
+                class="desktop-ellipse121"
+              />
+              <img
+                alt="Ellipse201341"
+                src="public/external/ellipse201341-uyum-200h.png"
+                class="desktop-ellipse201"
+              />
+              <img
+                alt="Ellipse341342"
+                src="public/external/ellipse341342-dj4o-200h.png"
+                class="desktop-ellipse341"
+              />
+              <img
+                alt="Ellipse131343"
+                src="public/external/ellipse131343-b53-200h.png"
+                class="desktop-ellipse131"
+              />
+              <img
+                alt="Ellipse211344"
+                src="public/external/ellipse211344-6wk-200h.png"
+                class="desktop-ellipse211"
+              />
+              <img
+                alt="Ellipse351345"
+                src="public/external/ellipse351345-agp-200h.png"
+                class="desktop-ellipse351"
+              />
+              <img
+                alt="Ellipse141346"
+                src="public/external/ellipse141346-66be-200h.png"
+                class="desktop-ellipse141"
+              />
+              <img
+                alt="Ellipse51347"
+                src="public/external/ellipse51347-eud-200h.png"
+                class="desktop-ellipse510"
+              />
+              <img
+                alt="Ellipse231348"
+                src="public/external/ellipse231348-dntl-200h.png"
+                class="desktop-ellipse231"
+              />
+              <img
+                alt="Ellipse371349"
+                src="public/external/ellipse371349-bn0f-200h.png"
+                class="desktop-ellipse371"
+              />
+              <img
+                alt="Ellipse241350"
+                src="public/external/ellipse241350-olz-200h.png"
+                class="desktop-ellipse241"
+              />
+              <img
+                alt="Ellipse381351"
+                src="public/external/ellipse381351-f0io-200h.png"
+                class="desktop-ellipse381"
+              />
+              <img
+                alt="Ellipse71352"
+                src="public/external/ellipse71352-cnz-200h.png"
+                class="desktop-ellipse71"
+              />
+              <img
+                alt="Ellipse251353"
+                src="public/external/ellipse251353-j2bf-200h.png"
+                class="desktop-ellipse251"
+              />
+              <img
+                alt="Ellipse391354"
+                src="public/external/ellipse391354-pg6-200h.png"
+                class="desktop-ellipse391"
+              />
+              <img
+                alt="Ellipse81355"
+                src="public/external/ellipse81355-4inn-200h.png"
+                class="desktop-ellipse81"
+              />
+              <img
+                alt="Ellipse261356"
+                src="public/external/ellipse261356-041m-200h.png"
+                class="desktop-ellipse261"
+              />
+              <img
+                alt="Ellipse401357"
+                src="public/external/ellipse401357-cd3j-200h.png"
+                class="desktop-ellipse401"
+              />
+              <img
+                alt="Ellipse91358"
+                src="public/external/ellipse91358-lmim-200h.png"
+                class="desktop-ellipse91"
+              />
+              <img
+                alt="Ellipse271359"
+                src="public/external/ellipse271359-3qsa-200h.png"
+                class="desktop-ellipse271"
+              />
+              <img
+                alt="Ellipse411360"
+                src="public/external/ellipse411360-x4mf-200h.png"
+                class="desktop-ellipse411"
+              />
+              <img
+                alt="Ellipse101361"
+                src="public/external/ellipse101361-v8f8-200h.png"
+                class="desktop-ellipse101"
+              />
+              <img
+                alt="Ellipse281362"
+                src="public/external/ellipse281362-33qe-200h.png"
+                class="desktop-ellipse281"
+              />
+              <img
+                alt="Ellipse421363"
+                src="public/external/ellipse421363-wh9p-200h.png"
+                class="desktop-ellipse421"
+              />
+            </div>
+            <div class="desktop-star3">
+              <img
+                alt="Ellipse11365"
+                src="public/external/ellipse11365-s925-200h.png"
+                class="desktop-ellipse112"
+              />
+              <img
+                alt="Ellipse151366"
+                src="public/external/ellipse151366-44v9-200h.png"
+                class="desktop-ellipse152"
+              />
+              <img
+                alt="Ellipse291367"
+                src="public/external/ellipse291367-d5yn-200h.png"
+                class="desktop-ellipse292"
+              />
+              <img
+                alt="Ellipse21368"
+                src="public/external/ellipse21368-x0pa-200h.png"
+                class="desktop-ellipse210"
+              />
+              <img
+                alt="Ellipse161369"
+                src="public/external/ellipse161369-q2e-200h.png"
+                class="desktop-ellipse162"
+              />
+              <img
+                alt="Ellipse301370"
+                src="public/external/ellipse301370-m1a-200h.png"
+                class="desktop-ellipse302"
+              />
+              <img
+                alt="Ellipse31371"
+                src="public/external/ellipse31371-5d3s-200h.png"
+                class="desktop-ellipse310"
+              />
+              <img
+                alt="Ellipse171372"
+                src="public/external/ellipse171372-o7x9-200h.png"
+                class="desktop-ellipse172"
+              />
+              <img
+                alt="Ellipse311373"
+                src="public/external/ellipse311373-zxt6-200h.png"
+                class="desktop-ellipse312"
+              />
+              <img
+                alt="Ellipse41374"
+                src="public/external/ellipse41374-9hjp-200h.png"
+                class="desktop-ellipse412"
+              />
+              <img
+                alt="Ellipse181375"
+                src="public/external/ellipse181375-ce5f-200h.png"
+                class="desktop-ellipse182"
+              />
+              <img
+                alt="Ellipse321376"
+                src="public/external/ellipse321376-iil9-200h.png"
+                class="desktop-ellipse322"
+              />
+              <img
+                alt="Ellipse111377"
+                src="public/external/ellipse111377-uli9-200h.png"
+                class="desktop-ellipse113"
+              />
+              <img
+                alt="Ellipse191378"
+                src="public/external/ellipse191378-w1k-200h.png"
+                class="desktop-ellipse192"
+              />
+              <img
+                alt="Ellipse331379"
+                src="public/external/ellipse331379-ge0w-200h.png"
+                class="desktop-ellipse332"
+              />
+              <img
+                alt="Ellipse121380"
+                src="public/external/ellipse121380-og8-200h.png"
+                class="desktop-ellipse122"
+              />
+              <img
+                alt="Ellipse201381"
+                src="public/external/ellipse201381-f6y-200h.png"
+                class="desktop-ellipse202"
+              />
+              <img
+                alt="Ellipse341382"
+                src="public/external/ellipse341382-grkc-200h.png"
+                class="desktop-ellipse342"
+              />
+              <img
+                alt="Ellipse131383"
+                src="public/external/ellipse131383-qkqs-200h.png"
+                class="desktop-ellipse132"
+              />
+              <img
+                alt="Ellipse211384"
+                src="public/external/ellipse211384-jfuk-200h.png"
+                class="desktop-ellipse212"
+              />
+              <img
+                alt="Ellipse351385"
+                src="public/external/ellipse351385-a0j-200h.png"
+                class="desktop-ellipse352"
+              />
+              <img
+                alt="Ellipse141386"
+                src="public/external/ellipse141386-fzr8-200h.png"
+                class="desktop-ellipse142"
+              />
+              <img
+                alt="Ellipse51387"
+                src="public/external/ellipse51387-2wyk-200h.png"
+                class="desktop-ellipse511"
+              />
+              <img
+                alt="Ellipse231388"
+                src="public/external/ellipse231388-0z9a-200h.png"
+                class="desktop-ellipse232"
+              />
+              <img
+                alt="Ellipse371389"
+                src="public/external/ellipse371389-ntum-200h.png"
+                class="desktop-ellipse372"
+              />
+              <img
+                alt="Ellipse241390"
+                src="public/external/ellipse241390-4fi8-200h.png"
+                class="desktop-ellipse242"
+              />
+              <img
+                alt="Ellipse381391"
+                src="public/external/ellipse381391-gy6-200h.png"
+                class="desktop-ellipse382"
+              />
+              <img
+                alt="Ellipse71392"
+                src="public/external/ellipse71392-5pq6-200h.png"
+                class="desktop-ellipse72"
+              />
+              <img
+                alt="Ellipse251393"
+                src="public/external/ellipse251393-04au-200h.png"
+                class="desktop-ellipse252"
+              />
+              <img
+                alt="Ellipse391394"
+                src="public/external/ellipse391394-01eo-200h.png"
+                class="desktop-ellipse392"
+              />
+              <img
+                alt="Ellipse81395"
+                src="public/external/ellipse81395-phvm-200h.png"
+                class="desktop-ellipse82"
+              />
+              <img
+                alt="Ellipse261396"
+                src="public/external/ellipse261396-35x-200h.png"
+                class="desktop-ellipse262"
+              />
+              <img
+                alt="Ellipse401397"
+                src="public/external/ellipse401397-ewo9-200h.png"
+                class="desktop-ellipse402"
+              />
+              <img
+                alt="Ellipse91398"
+                src="public/external/ellipse91398-z0rn-200h.png"
+                class="desktop-ellipse92"
+              />
+              <img
+                alt="Ellipse271399"
+                src="public/external/ellipse271399-2uh-200h.png"
+                class="desktop-ellipse272"
+              />
+              <img
+                alt="Ellipse411400"
+                src="public/external/ellipse411400-z2dx-200h.png"
+                class="desktop-ellipse413"
+              />
+              <img
+                alt="Ellipse101401"
+                src="public/external/ellipse101401-wbor-200h.png"
+                class="desktop-ellipse102"
+              />
+              <img
+                alt="Ellipse281402"
+                src="public/external/ellipse281402-x7u-200h.png"
+                class="desktop-ellipse282"
+              />
+              <img
+                alt="Ellipse421403"
+                src="public/external/ellipse421403-mvn-200h.png"
+                class="desktop-ellipse422"
+              />
+              <img
+                alt="Ellipse661404"
+                src="public/external/ellipse661404-hee-500w.png"
+                class="desktop-ellipse66"
+              />
+            </div>
+            <div class="desktop-content2">
+              <div class="desktop-welcome">
+                <span class="desktop-text188 DesktopBigTitle2">
+                  <span class="desktop-text189">Welcome to</span>
+                  <span class="desktop-text190">IKEA</span>
+                  <span class="desktop-text191">- your</span>
+                  <span class="desktop-text192">
+                    One-Stop E-commerce Destination
+                  </span>
+                  <span>for Home Essentials</span>
+                </span>
+                <span class="desktop-text194 DesktopHeadline2">
+                  <span class="desktop-text195">Welcome to</span>
+                  <span class="desktop-text196">the world of IKEA</span>
+                  <span class="desktop-text197">
+                    , where functional design meets affordability. Join us and
+                    create
+                  </span>
+                  <span class="desktop-text198">your dream living space</span>
+                  <span>with IKEA.</span>
+                </span>
+                <div class="desktop-shopnow">
+                  <span class="desktop-text200 DesktopButton">Shop now</span>
+                </div>
+              </div>
+              <div class="desktop-maskgroup20">
+                <img
+                  alt="Hero1412"
+                  src="public/external/hero1412-y6ow-800h.png"
+                  class="desktop-hero8"
+                />
+              </div>
+            </div>
+            <div class="desktop-header">
+              <div class="desktop-nav-bar">
+                <img
+                  alt="logo11415"
+                  src="public/external/logo11415-kh2b-200h.png"
+                  class="desktop-logo12"
+                />
+                <div class="desktop-search">
+                  <div class="desktop-frame9">
+                    <img
+                      alt="iconamoonsearchI141"
+                      src="public/external/iconamoonsearchi141-wbg.svg"
+                      class="desktop-iconamoonsearch"
+                    />
+                    <span class="desktop-text201 DesktopLabel">Search</span>
+                  </div>
+                  <div class="desktop-icon2">
+                    <div class="desktop-group4">
+                      <div class="desktop-maskgroup21">
+                        <div class="desktop-group5">
+                          <img
+                            alt="VectorI142"
+                            src="public/external/vectori142-x52j.svg"
+                            class="desktop-vector7"
+                          />
+                          <div class="desktop-group6">
+                            <img
+                              alt="VectorI142"
+                              src="public/external/vectori142-mx39.svg"
+                              class="desktop-vector8"
+                            />
+                            <img
+                              alt="VectorI142"
+                              src="public/external/vectori142-b0rv.svg"
+                              class="desktop-vector9"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt="VectorI142"
+                          src="public/external/vectori142-tctn.svg"
+                          class="desktop-vector10"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="Line111421"
+                src="public/external/line111421-ztxf.svg"
+                class="desktop-line11"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
