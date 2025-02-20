@@ -646,8 +646,9 @@
                 />
               </div>
             </div>
+
             <div class="desktop-products">
-              <div class="desktop-frame19">
+              <div class="desktop-frame19 slider-item">
                 <div class="desktop-maskgroup10">
                   <img
                     alt="HeroI127"
@@ -663,7 +664,7 @@
                   Floor lamp, white
                 </span>
               </div>
-              <div class="desktop-frame22">
+              <div class="desktop-frame22 slider-item">
                 <div class="desktop-maskgroup11">
                   <img
                     alt="HeroI127"
@@ -679,7 +680,7 @@
                   Floor lamp, white
                 </span>
               </div>
-              <div class="desktop-frame20">
+              <div class="desktop-frame20 slider-item">
                 <div class="desktop-maskgroup12">
                   <img
                     alt="HeroI127"
@@ -695,23 +696,8 @@
                   Floor lamp, white
                 </span>
               </div>
-              <div class="desktop-frame217">
-                <div class="desktop-maskgroup13">
-                  <img
-                    alt="HeroI127"
-                    src="public/external/heroi127-itk-500w.png"
-                    class="desktop-hero4"
-                  />
-                </div>
-                <span class="desktop-text163 DesktopHeadline2">
-                  <span>VINDKAST</span>
-                  <br />
-                </span>
-                <span class="desktop-text166 DesktopBody3">
-                  Floor lamp, white
-                </span>
-              </div>
             </div>
+
             <div class="desktop-category">
               <div class="desktop-newin">
                 <img
@@ -1343,5 +1329,36 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $sliderItems = $(".slider-item");
+        var totalItems = $sliderItems.length;
+        var currentIndex = 0;
+
+        // Hàm để cập nhật trạng thái của các hình ảnh
+        function updateSlider(index) {
+          $sliderItems.removeClass("active");
+          $sliderItems.eq(index).addClass("active");
+          currentIndex = index;
+        }
+
+        // Tự động chuyển động sau mỗi 3 giây
+        setInterval(function () {
+          currentIndex = (currentIndex + 1) % totalItems;
+          updateSlider(currentIndex);
+        }, 3000);
+
+        // Khởi tạo slider lần đầu tiên
+        updateSlider(currentIndex);
+
+        // Xử lý sự kiện click trên các hình ảnh
+        $sliderItems.on("click", function () {
+          var clickedIndex = $sliderItems.index(this);
+          updateSlider(clickedIndex);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+/* Container chính của trang */
 .desktop-container {
   width: 100%;
   display: flex;
@@ -7,6 +8,7 @@
   flex-direction: column;
 }
 
+/* Container chính của phần nội dung */
 .desktop-main {
   width: 100%;
   height: 6494px;
@@ -17,6 +19,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
+/* Phần footer trang */
 .desktop-footer {
   top: 6126px;
   left: 0px;
@@ -29,6 +32,7 @@
   background-color: var(--dl-color-foundation_primary-darker);
 }
 
+/* Container chính của footer */
 .desktop-group96 {
   top: 67px;
   left: 50%;
@@ -41,6 +45,7 @@
   flex-shrink: 1;
 }
 
+/* Line chính trong footer */
 .desktop-line7 {
   top: 252.87515258789062px;
   left: 0px;
@@ -49,6 +54,7 @@
   position: absolute;
 }
 
+/* Text chính trong footer */
 .desktop-text100 {
   top: 267px;
   left: 617px;
@@ -66,6 +72,7 @@
   text-decoration: none;
 }
 
+/* Frame chính trong footer */
 .desktop-frame6 {
   gap: 56px;
   top: 0px;
@@ -1319,9 +1326,11 @@
   position: absolute;
 }
 
+/* Container của các sản phẩm */
 .desktop-products {
   gap: 24px;
   top: 271px;
+  left: 60px;
   left: 120px;
   width: 1318px;
   display: flex;
@@ -1329,6 +1338,27 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 0;
+}
+
+/* Tweak lại các style cho các item slider */
+.slider-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  transition: filter 0.5s ease-in-out;
+  filter: blur(5px);
+  cursor: pointer;
+}
+
+/* Tweak lại style cho các hình ảnh trong item slider */
+.slider-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Tweak lại style cho các hình ảnh được active */
+.slider-item.active {
+  filter: blur(0);
 }
 
 .desktop-frame19 {
@@ -1452,24 +1482,6 @@
   height: auto;
   text-align: left;
   line-height: 129.99999523162842%;
-}
-
-.desktop-frame217 {
-  gap: 16px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.desktop-maskgroup13 {
-  width: 400px;
-  height: 600px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 1;
-  background-color: rgba(217, 217, 217, 1);
 }
 
 .desktop-hero4 {
